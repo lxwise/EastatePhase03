@@ -1,0 +1,38 @@
+/*中间内容*/
+.productLt-mid{
+    height: 4800px;
+    width: 1520px;
+    border: 1px solid slategray;
+    margin: auto;
+    margin-top: 50px;
+
+}
+/*--------------------中间文字图片内容------------------------------*/
+.productLt-zi {
+    line-height: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+/*图片*/
+.productLt-mid img{
+    height: 300px;
+    width: 1400px;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+/*文字*/
+.productLt-mid span{
+    margin-left: 60px;
+}
+.productLt-mid p{
+    font-size: 20px;
+    margin-left: 50px;
+}
+.productLt-mid-tx{
+    line-height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+

@@ -1,0 +1,40 @@
+/*布局*/
+.product-case-mid{
+    width: 1400px;
+    height: 1100px;
+    border: 1px solid slategray;
+    margin: auto;
+    margin-top: 50px;
+}
+/*图片大小*/
+.product-case-mid img{
+    width: 350px;
+    height: 350px;
+ }
+/*图片横排*/
+.product-case-mid-info> div div{
+    float: left;
+    padding: 0px 30px;
+    margin-left: 30px;
+}
+/*第一行文字*/
+.product-case-mid-info>div:nth-child(2) div{
+    float: left;
+    padding: 0px 150px;
+    margin-left: 52px;
+    line-height: 60px;
+}
+/*第二行文字*/
+.product-case-mid-info>div:nth-child(3) div{
+    float: left;
+    padding: 0px 0px;
+    margin-left: 62px;
+
+}
+/*分页布局*/
+.product-case-mid-page{
+    width: 1400px;
+    height: 100px;
+   /* border: 1px solid slategray;*/
+    float: right;
+}

@@ -1,0 +1,181 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<!--头部分-->
+<jsp:include page="head.jsp"></jsp:include>
+<!--背景图片-->
+<div class="index-img">
+    <!--图片-->
+    <div>
+        <div class='rectangle'>
+            <p>地产开发</p>
+        </div>
+        <div class='rectangle1'>
+            <p>商业运营</p>
+        </div>
+        <div class='rectangle1'>
+            <p>物业管理</p>
+        </div>
+        <div class='rectangle1'>
+            <p>金融服务</p>
+        </div>
+        <div class='rectangle1'>
+            <p>全球战略</p>
+        </div>
+    </div>
+</div>
+<!--中间部分-->
+<div class="index-mid">
+    <!--精品案例-->
+    <div>
+        <div class="index-case">
+            <div>精品案例</div>
+            <div><img src="../img/00arr.png" height="24" width="24"/></div>
+        </div>
+    </div>
+    <div class="index-box">
+        <div>
+            <c:forEach items="${list}" var="model">
+                <div><img src="${model.imgHeaf}" height="70" width="70"/></div>
+            </c:forEach>
+            <%--<div><img src="../img/j1.png" height="70" width="70"/></div>
+            <div><img src="../img/j2.png" height="70" width="70"/></div>
+            <div><img src="../img/j3.png" height="70" width="70"/></div>
+            <div><img src="../img/j4.png" height="70" width="70"/></div>
+            <div><img src="../img/j5.png" height="70" width="70"/></div>
+            <div><img src="../img/j6.png" height="70" width="70"/></div>--%>
+        </div>
+    </div>
+    <div class="index-case1">
+        <div>
+            <c:forEach items="${list}" var="model">
+                <div>${model.imgName}</div>
+            </c:forEach>
+           <%-- <div>商业地产</div>
+            <div>住宅地产</div>
+            <div>高端别墅</div>
+            <div>旅游地产</div>
+            <div>养老地产</div>
+            <div>其它</div>--%>
+        </div>
+    </div>
+    <!--案例楼房图片-->
+    <div class="cace-img">
+        <div>
+            <c:forEach items="${caseList}" var="model">
+                <div><img src="${model.img}" height="430" width="300"/></div>
+            </c:forEach>
+           <%-- <div><img src="../img/l1.jpg" height="430" width="300"/></div>
+            <div><img src="../img/l2.jpg" height="430" width="300"/></div>
+            <div><img src="../img/l3.jpg" height="430" width="300"/></div>
+            <div><img src="../img/l4.jpg" height="430" width="300"/></div>--%>
+        </div>
+    </div>
+    <!--新闻中心-->
+    <div class="index-mid-news">
+        <div class="index-case">
+            <div>新闻中心</div>
+            <div><img src="../img/00arr.png" height="24" width="24"/></div>
+        </div>
+        <div class="mid-news">
+            <div>
+                <c:forEach items="${homenewsList}" var="model">
+                    ${model.homeNew}
+                </c:forEach>
+               <%-- <div class="new"><span>集团在藏拉萨水电项目投产.
+                ....</span>
+                    <p>2016-09-04</p>
+                    <p>8月29日，国家集团在藏拉萨水电项目
+                        - --西藏尼洋河多水电站首台机组(4
+                        号机)完成72小时试运行，......</p>
+                    <div class="new1">媒体聚焦</div>
+                </div>
+                <div class="new">
+                    <span>明年供给侧改革或突出“去</span>.....
+                    <p>2016-09-04</p>
+                    <p>11月出口和进口双双正增长，释放出进
+                        出口回稳向好的积极信号，也再度印证
+                        了当前我国经济筑底迹象显现。
+                        ......</p>
+                    <div class="new1">行业新闻</div>
+                </div>
+                <div class="new">
+                    <span>东北公司福建公司贯彻六</span>.... .
+                    <p>2016-09-04</p>
+                    <p>多布水电站是尼洋河综合治理与保护控
+                        制性工程和优选项目，是自治区“十二
+                        五”期间唯一开工并建成投产的重点.....
+                    </p>
+                    <div class="new1">集团公告</div>
+                </div>--%>
+            </div>
+        </div>
+        <!--公司介绍-->
+        <div class="index-mid-company">
+            <div><img src="../img/g2.jpg" height="280" width="480"/></div>
+            <div class="mid-company">
+                ${companyModel.bgtext}
+                <%--<span>宇宙房地产集团</span>
+                <p>宇宙房地产集团股份有限公司成立于1986年，1990年进
+                    入房地产行业，经过三十余年的发展，已成为国内领先
+                    的房地产公司。2016年公司首次跻身《财富》“世界
+                    500强”，位列榜单第370位。</p>--%>
+
+            </div>
+            <div class="mid-company1"><img src="../img/g3.jpg" height="31" width="74"/></div>
+        </div>
+        <!--公司简介-->
+        <div class="mid-company-info">
+            <div>
+                <c:forEach items="${cpList}" var="model">
+                    <div><img src="${model.cpImg}" height="90" width="90"/></div>
+                </c:forEach>
+            <%--    <div><img src="../img/r1.png" height="90" width="90"/></div>
+                <div><img src="../img/r2.png" height="90" width="90"/></div>
+                <div><img src="../img/r3.png" height="90" width="90"/></div>
+                <div><img src="../img/r4.png" height="90" width="90"/></div>--%>
+            </div>
+            <div>
+                <c:forEach items="${cpList}" var="model">
+                    <div>${model.cpInfo}</div>
+                </c:forEach>
+             <%--   <div>人才理念</div>
+                <div>人员队伍</div>
+                <div>员工培训</div>
+                <div>人才招聘</div>--%>
+            </div>
+            <div>
+                <c:forEach items="${cpList}" var="model">
+                    <div>${model.cpInfo1}
+                    </div>
+                </c:forEach>
+               <%-- <div>以才立，业以才兴。人才是企业发<p>
+                    展的根本是发展的第一生产力。</p>
+                </div>
+                <div>人才是一条理性的河流，哪里有谷<p>
+                    地，就向哪里汇聚。</p>
+                </div>
+                <div>人才是企业发展的根本，是推动企<p>
+                    业跨越式发展的第一生产力。</p>
+                </div>
+                <div>完善人才队伍的结构和水平，保持<p>
+                    组织的激情与活力。</p>
+                </div>--%>
+            </div>
+        </div>
+    </div>
+</div>
+<!--尾部分-->
+<jsp:include page="foot.jsp"></jsp:include>
+
+</body>
+</html>

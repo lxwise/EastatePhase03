@@ -1,0 +1,61 @@
+/*中间内容*/
+.companyInfo-mid{
+    height: 1500px;
+    width: 1520px;
+    border: 1px solid slategray;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;/*图片超出隐藏*/
+}
+/*图片*/
+.companyInfo-mid img{
+    height: 300px;
+    width: 1400px;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+/*文字*/
+.companyInfo-mid span{
+    margin-left: 60px;
+}
+.companyInfo-mid p{
+    font-size: 20px;
+    margin-left: 50px;
+}
+.companyInfo-mid-tx{
+    line-height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+
+/*------------------轮播-------------------------*/
+
+.companyInfo-mid-img img{
+    width: 266px;
+    height: 240px;
+}
+.companyInfo-mid-img{
+    width: 500%;
+    height: 300px;
+    margin-top: 50px;
+    /*animation动画属性
+        move 5s 要绑定动画的名字 5秒移动
+        linear:表示动画从头到尾的速度都是相同的。不延迟
+        infinite：normal 循环的
+    */
+    animation: move 10s linear 0s infinite normal;
+}
+/*@keyframes 规则是创建动画。
+@keyframes 规则内指定一个 CSS
+样式和动画将逐步从目前的样式更改为新的样式。
+*/
+@keyframes move {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: -600px;
+    }
+}

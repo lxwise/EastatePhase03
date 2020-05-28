@@ -1,0 +1,30 @@
+/*中间部分*/
+
+/*公司简介*/
+.mid-company-info{
+    width: 1300px;
+    height: 350px;
+    /* border: 1px solid slategray;*/
+    float: left;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+.mid-company-info> div div{
+    float: left;
+    padding: 0px 70px;
+    margin-left: 30px;
+}
+.mid-company-info>div:nth-child(2) div{
+    float: left;
+    padding: 0px 70px;
+    margin-left: 52px;
+    line-height: 60px;
+}
+.mid-company-info>div:nth-child(3) div{
+    float: left;
+    padding: 0px 5px;
+    margin-left: 25px;
+    font-size: 15px;
+    text-align: center;
+
+}

@@ -1,0 +1,385 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    width: 210px;
+    height:140px;
+    position: relative;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 90px;
+    margin: 200px auto;
+    perspective: 1000px;
+}
+.carouse{
+    transform-style:preserve-3d;
+
+}
+.carouse div{
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 90px;
+    border: 2px solid black;
+}
+.btn-group{
+    display: block;
+    margin:100px auto;
+    width: 240px;
+    height: 30px;
+}
+.btn-group button{
+    width: 80px;
+    height: 100%;
+}
+
+
+.carouse .pic1{
+    background:rgba(255,9,15,0.7);
+    transform: rotateY(0deg) translateZ(210px);
+}
+.carouse .pic2{
+    background:rgba(100,9,100,0.7);
+    transform: rotateY(40deg) translateZ(210px);
+}
+.carouse .pic3{
+    background:rgba(50,50,15,0.7);
+    transform: rotateY(80deg) translateZ(210px);
+}
+.carouse .pic4{
+    background:rgba(150,100,200,0.7);
+    transform: rotateY(120deg) translateZ(210px);
+}
+.carouse .pic5{
+    background:rgba(120,120,120,0.7);
+    transform: rotateY(160deg) translateZ(210px);
+}
+.carouse .pic6{
+    background:rgba(110,9,250,0.7);
+    transform: rotateY(200deg) translateZ(210px);
+}
+.carouse .pic7{
+    background:rgba(80,200,15,0.7);
+    transform: rotateY(240deg) translateZ(210px);
+}
+.carouse .pic8{
+    background:rgba(180,150,100,0.7);
+    transform: rotateY(280deg) translateZ(210px);
+}
+.carouse .pic9{
+    background:rgba(255,150,0,0.7);
+    transform: rotateY(320deg) translateZ(210px);
+}
+
+
+/*=== 下一个动画 ===*/
+@keyframes to-scroll1 {
+    0%{
+        transform: rotateY(0deg);
+    }
+
+    100%{
+        transform: rotateY(-40deg);
+
+    }
+
+}
+#carouse1{
+    animation: to-scroll1  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll2 {
+    0%{
+        transform: rotateY(-40deg);
+    }
+
+    100%{
+        transform: rotateY(-80deg);
+
+    }
+
+}
+#carouse2{
+    animation: to-scroll2  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll3 {
+    0%{
+        transform: rotateY(-80deg);
+    }
+
+    100%{
+        transform: rotateY(-120deg);
+
+    }
+
+}
+#carouse3{
+    animation: to-scroll3  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll4 {
+    0%{
+        transform: rotateY(-120deg);
+    }
+
+    100%{
+        transform: rotateY(-160deg);
+
+    }
+
+}
+#carouse4{
+    animation: to-scroll4  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll5 {
+    0%{
+        transform: rotateY(-160deg);
+    }
+
+    100%{
+        transform: rotateY(-200deg);
+
+    }
+
+}
+#carouse5{
+    animation: to-scroll5  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll6 {
+    0%{
+        transform: rotateY(-200deg);
+    }
+
+    100%{
+        transform: rotateY(-240deg);
+
+    }
+
+}
+#carouse6{
+    animation: to-scroll6  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll7 {
+    0%{
+        transform: rotateY(-240deg);
+    }
+
+    100%{
+        transform: rotateY(-280deg);
+
+    }
+
+}
+#carouse7{
+    animation: to-scroll7  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll8 {
+    0%{
+        transform: rotateY(-280deg);
+    }
+
+    100%{
+        transform: rotateY(-320deg);
+
+    }
+
+}
+#carouse8{
+    animation: to-scroll8  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll9 {
+    0%{
+        transform: rotateY(-320deg);
+    }
+
+    100%{
+        transform: rotateY(-360deg);
+
+    }
+
+}
+#carouse9{
+    animation: to-scroll9  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+
+/* @keyframes to-scroll10 {
+     0%{
+         transform: rotateY(-360deg);
+     }
+
+     100%{
+         transform: rotateY(-400deg);
+
+     }
+
+ }
+ #carouse10{
+     animation: to-scroll10  2s ease both;
+     /*animation-fill-mode: both;*/
+
+
+
+
+
+/* === 上一个动画 ===*/
+
+@keyframes to-scroll21 {
+    0%{
+        transform: rotateY(-40deg);
+    }
+
+    100%{
+        transform: rotateY(0deg);
+
+    }
+
+}
+#carouse21{
+    animation: to-scroll21 2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll22 {
+    0%{
+        transform: rotateY(-80deg);
+    }
+
+    100%{
+        transform: rotateY(-40deg);
+
+    }
+
+}
+#carouse22{
+    animation: to-scroll22  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll23 {
+    0%{
+        transform: rotateY(-120deg);
+    }
+
+    100%{
+        transform: rotateY(-80deg);
+
+    }
+
+}
+#carouse23{
+    animation: to-scroll23  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll24 {
+    0%{
+        transform: rotateY(-160deg);
+    }
+
+    100%{
+        transform: rotateY(-120deg);
+
+    }
+
+}
+#carouse24{
+    animation: to-scroll24  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll25 {
+    0%{
+        transform: rotateY(-200deg);
+    }
+
+    100%{
+        transform: rotateY(-160deg);
+
+    }
+
+}
+#carouse25{
+    animation: to-scroll25  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll26 {
+    0%{
+        transform: rotateY(-240deg);
+    }
+
+    100%{
+        transform: rotateY(-200deg);
+
+    }
+
+}
+#carouse26{
+    animation: to-scroll26  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll27 {
+    0%{
+        transform: rotateY(-280deg);
+    }
+
+    100%{
+        transform: rotateY(-240deg);
+
+    }
+
+}
+#carouse27{
+    animation: to-scroll27  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll28 {
+    0%{
+        transform: rotateY(-320deg);
+    }
+
+    100%{
+        transform: rotateY(-280deg);
+
+    }
+
+}
+#carouse28{
+    animation: to-scroll28  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+@keyframes to-scroll29 {
+    0%{
+        transform: rotateY(-360deg);
+    }
+
+    100%{
+        transform: rotateY(-320deg);
+
+    }
+
+}
+#carouse29{
+    animation: to-scroll29  2s ease both;
+    /*animation-fill-mode: both;*/
+}
+
+@keyframes to-scroll30 {
+    0%{
+        transform: rotateY(-400deg);
+    }
+
+    100%{
+        transform: rotateY(-360deg);
+
+    }
+
+}
+#carouse30{
+    animation: to-scrol30  2s ease both;
+    /*animation-fill-mode: both;*/
+}

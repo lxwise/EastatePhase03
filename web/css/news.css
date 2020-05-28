@@ -1,0 +1,42 @@
+/*新闻布局*/
+.news-mid{
+    width: 1400px;
+    height: 1220px;
+    border: 1px solid slategray;
+    margin: auto;
+}
+/*第一行文字*/
+.news-zi>div:first-child{
+    font-size: 25px;
+}
+
+.news-zi{
+   text-indent: 3em;
+}
+.news-zi span{
+    color: #DBB167;
+}
+/*第二行*/
+.news-zi>div:nth-child(2){
+    font-size: 20px;
+}
+.news-zi>div:nth-child(3){
+    font-size: 17px;
+    font-family: "仿宋";
+}
+
+.news-box{
+    width: 1400px;
+    height: 280px;
+    border-bottom: 1px dashed slategray;
+
+}
+
+/*分页*/
+.news-page{
+    width: 1400px;
+     height: 100px;
+   /*  border: 1px solid red;*/
+     float: left;
+
+}
